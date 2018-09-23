@@ -3,7 +3,7 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(106, 206, 7);
+    background-color: rgb(71, 123, 20);;
  }
 .reset-btn{
     font-size: 16px;
@@ -15,11 +15,12 @@ body{
 .background{
     background: url('../img/background.jpg') repeat-x;
     background-size: auto;
-    position: absolute;
+    position: relative;
     width: 1024vw;
     height: 100vh;
-    animation: background 4s linear infinite;
+    animation: background 6s linear infinite;
 }
+
 .racing-flag{
     position: absolute;
     right: 15px;
@@ -77,8 +78,71 @@ body{
     bottom: 0;
     left: 0;
     animation: astro 600ms steps(10) infinite alternate;
-    z-index: 99;
     transition: top 500ms, left 500ms;
+}
+.girl {
+    position: absolute;
+    top: 60%;
+    right: 0;
+    bottom: 0;
+    left: 26px;
+    background: url('../img/girl.png') 0 0 no-repeat;
+    width: 95.71px;
+    height: 130.33px;
+    animation: girlwalk 0.3s steps(7) infinite;
+    transform: scale(1.5);
+}
+.grass {
+    position: absolute;
+    top: 370px;
+    bottom: 0;
+    margin: auto;
+    background: url('../img/grass.png') 0 0 repeat;
+    background-size: auto;
+    width: 1365px;
+    height: 218px;
+    animation: grassbackground 1.5s linear infinite;
+    
+}
+
+@keyframes grassbackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -500px 0;
+    }
+}
+
+
+@keyframes girlwalk {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -670px 0;
+    }
+}
+.grass1 {
+    position: absolute;
+    top: 432px;
+    bottom: 0;
+    margin: auto;
+    background: url(../img/grass1.png) 0 0 repeat;
+    background-size: auto;
+    width: 2210px;
+    height: 327px;
+    animation: grassbackground1 2.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes grassbackground1 {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -2210px 0;
+    }
 }
 @keyframes background{
     from{
