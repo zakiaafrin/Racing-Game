@@ -101,7 +101,7 @@ body{
     background-size: auto;
     width: 1365px;
     height: 218px;
-    animation: grassbackground 1.5s linear infinite;
+    animation: grassbackground 2.5s linear infinite;
     
 }
 
@@ -132,7 +132,7 @@ body{
     background-size: auto;
     width: 2210px;
     height: 327px;
-    animation: grassbackground1 2.5s linear infinite;
+    animation: grassbackground1 5s linear infinite;
     z-index: 1;
 }
 
